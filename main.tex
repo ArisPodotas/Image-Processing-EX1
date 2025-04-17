@@ -173,10 +173,103 @@ National and Kapodistrian University of Athens}
     \newline
 
     \section{Exercise 2} \label{sec:ex2}
+
+    The requirement says "a method" implying one but multiple transformations can be assigned to one method.
+    \newline
+
+    \begin{table}[H]
+        \caption{Method Proposals}\label{tab:proposals}
+        \begin{center}
+            \resizebox{0.45 \textwidth}{!}{
+                \begin{tabular}[c]{l|l|}
+                    \hline
+                    \multicolumn{1}{c|}{\textbf{Method}} & 
+                    \multicolumn{1}{c}{\textbf{Goal}} \\
+                    \hline
+                    &  \\
+                    &  \\
+                    \hline
+                \end{tabular}
+            }
+        \end{center}
+    \end{table}
+
+
+    \newline
+
     \section{Exercise 3} \label{sec:ex3}
+
+    The requirement says "a method" implying one but multiple transformations can be assigned to one method.
+    \newline
+
+    \begin{table}[H]
+        \caption{Method Proposals}\label{tab:proposals3}
+        \begin{center}
+            \resizebox{0.45 \textwidth}{!}{
+                \begin{tabular}[c]{l|l|}
+                    \hline
+                    \multicolumn{1}{c|}{\textbf{Method}} & 
+                    \multicolumn{1}{c}{\textbf{Goal}} \\
+                    \hline
+                    &  \\
+                    &  \\
+                    \hline
+                \end{tabular}
+            }
+        \end{center}
+    \end{table}
+
+    \newline
+
     \section{Exercise 4} \label{sec:ex4}
     \section{Exercise 5} \label{sec:ex5}
+
+    Lets look at some of the descriptive values for both images with our visual overview
+    \newline
+
+    \begin{table}[H]
+        \caption{Comparison of Image\_1 and Image\_2}\label{tab:comparison}
+        \begin{center}
+            \resizebox{0.45 \textwidth}{!}{
+                \begin{tabular}[c]{l|l|}
+                    \hline
+                    \multicolumn{1}{c|}{\textbf{Image}} & 
+                    \multicolumn{1}{c}{\textbf{Size}} \\
+                    \hline
+                    Image\_1 & $800 \times 641$ \\
+                    Image\_2 & $800 \times 641$ \\
+                    \hline
+                \end{tabular}
+            }
+        \end{center}
+    \end{table}
+
+    Visually it seems like we have just taken the negative of the image and since the scale of the image and the what side the aspects of the image are on has not changed we can assume a negative transformation has occurred. Upon zooming in we can see that Image\_2 has some quality nuance, but we can simply examine Image\_1 to see that it has this effect as well.
+    \newline
+
+    So the steps taken are those of getting the negative of an image which is to: 
+    \newline
+
+    \[f(x) = 255 - x\]
+    \newline
+
+    In order to do the opposite we need a function (let's call it $g(x)$) such that:
+    \newline
+
+    \[
+        \resizebox{0.45\textwidth}{!}{$
+        \begin{aligned}
+            & g(f(x)) = x \iff g(255 - x) = x \iff \\
+            & g(x) = f(x) = 255 - x
+        \end{aligned}
+        $}
+    \]
+    \newline
+
     \section{Exercise 6} \label{sec:ex6}
+
+    \newline
+
     \section{Exercise 7} \label{sec:ex7}
 
     \printbibliography

@@ -9,6 +9,7 @@ def req1(img: Image.Image) -> Image.Image:
         output: np.ndarray = np.copy(im) # Copy by value
         def interpolate(value: int) -> int:
             """Will calculate the new value"""
+            # I wish I could have come up with something better but
             holder: int = -1
             if value <= 30:
                 holder = 10
