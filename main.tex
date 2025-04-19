@@ -130,21 +130,21 @@ National and Kapodistrian University of Athens}
 
     \subsection{Example} \label{subsec:example}
 
-    You can find the files that perform this transformation \href{./src/}{here}.
+    You can find the files that perform this transformation \href{https://github.com/ArisPodotas/Image-Processing-EX1/blob/master/src/req1.py}{here}.
     \newline
 
 \end{multicols}
 
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[width=0.95\textwidth]{figures/first requirement before.png}
+        \includegraphics[width=0.95\textwidth]{figures/req1b.png}
     \end{center}
     \caption{Our image before the transformation}\label{fig:before}
 \end{figure}
 
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[width=0.95\textwidth]{figures/first requirement after.png}
+        \includegraphics[width=0.95\textwidth]{figures/req1a.png}
     \end{center}
     \caption{Image after the transformation}\label{fig:after}
 \end{figure}
@@ -174,27 +174,7 @@ National and Kapodistrian University of Athens}
 
     \section{Exercise 2} \label{sec:ex2}
 
-    The requirement says "a method" implying one but multiple transformations can be assigned to one method.
-    \newline
-
-    \begin{table}[H]
-        \caption{Method Proposals}\label{tab:proposals}
-        \begin{center}
-            \resizebox{0.45 \textwidth}{!}{
-                \begin{tabular}[c]{l|l|}
-                    \hline
-                    \multicolumn{1}{c|}{\textbf{Method}} & 
-                    \multicolumn{1}{c}{\textbf{Goal}} \\
-                    \hline
-                    &  \\
-                    &  \\
-                    \hline
-                \end{tabular}
-            }
-        \end{center}
-    \end{table}
-
-
+    A gamma correction with a $G$ of more than 1 would lighten the image in the perception of the human eye.
     \newline
 
     \section{Exercise 3} \label{sec:ex3}
@@ -211,17 +191,23 @@ National and Kapodistrian University of Athens}
                     \multicolumn{1}{c|}{\textbf{Method}} & 
                     \multicolumn{1}{c}{\textbf{Goal}} \\
                     \hline
-                    &  \\
-                    &  \\
+                    Gamma correction & Accommodating for the perception of the human eye \\
+                    Adding a constant & To bring up every pixels brightness \\
+                    Multiplying by a constant & To bring up every pixels brightness \\
                     \hline
                 \end{tabular}
             }
         \end{center}
     \end{table}
 
+    Any one of the proposals or a combination of them would make the image appear brighter.
     \newline
 
     \section{Exercise 4} \label{sec:ex4}
+
+    Taking a look at the image we can assume a median filter would not be suited to sharpening this image considering the edges and smooth regions, we should use some transformation that enhances the edges of the image. If we took the Laplacian of the image and used the isolated edges to alter only those pixels in the original image we would effectively increase the contrast of the edges and make the image look sharper. The proposal is to apply a gamma filter only to the pixels of the image that the Laplacian isolates ($G \geq 1$ ideally).
+    \newline
+
     \section{Exercise 5} \label{sec:ex5}
 
     Lets look at some of the descriptive values for both images with our visual overview
@@ -268,6 +254,7 @@ National and Kapodistrian University of Athens}
 
     \section{Exercise 6} \label{sec:ex6}
 
+    Before any of the following, you will be able to find all source files in \href{https://github.com/ArisPodotas/Image-Processing-EX1/tree/master}{this repository}.
     \newline
 
     \section{Exercise 7} \label{sec:ex7}
