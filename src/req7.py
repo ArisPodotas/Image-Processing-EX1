@@ -4,6 +4,8 @@ import numpy as np
 import cv2 as cv
 import matplotlib.pyplot as plt
 
+# Check the notebook since I stopped the implementation here when I realised it's asked in a notebook
+
 def stripe(img: np.ndarray[int, ...]) -> np.ndarray[int, ...]:
     """Keep only the pixels between two lines y = (r - x cos(theta)) / sin(theta)"""
     output: np.ndarray[int, ...] = np.zeros_like(img)
